@@ -1,7 +1,7 @@
 import { FaReact } from 'react-icons/fa'
 import { SiRubyonrails, SiRuby, SiJavascript, SiTypescript, SiTailwindcss } from 'react-icons/si'
 
-export const Stack = [
+export const Stacks = [
     {
         id: 0,
         tech: 'Ruby',
