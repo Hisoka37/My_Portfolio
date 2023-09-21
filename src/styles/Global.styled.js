@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
+
+styled
 
 export const MainBody = styled.div`
     background-color: ${({ theme }) => theme.colors.primary};
@@ -68,7 +70,7 @@ export const IconContainer = styled.div`
         switch (color) {
             case 'white':
                 return theme.colors.white;
-            case 'nlue':
+            case 'blue':
                 return theme.colors.secondary;
             default:
                 return;
