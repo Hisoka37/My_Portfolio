@@ -10,7 +10,9 @@ export const projectsDetails = [
         tech_stack: ['TypeScript', 'React.js', 'Chakra UI'],
         project_img: GameHub,
         project_URL: 'https://game-fz03ur1w1-hisoka37.vercel.app',
+        source_code: 'https://github.com/Hisoka37/Games_Hub',
         reverse: false,
+
     }, 
 
     {
@@ -20,6 +22,7 @@ export const projectsDetails = [
         tech_stack: ['Ruby on Rails', 'React.js', 'Redux.js', 'PostgreSQL',],
         project_img: HouseAgs,
         project_URL: 'https://house-rent-new5.onrender.com',
+        source_code: 'https://github.com/Hisoka37/house-rent-frontend',
         reverse: true,
     },
 
@@ -30,6 +33,7 @@ export const projectsDetails = [
         tech_stack: ['JavaScript', 'React.js', 'Redux.js',],
         project_img: SpaceHub,
         project_URL: 'https://space-hub-2unx.onrender.com',
+        source_code:'https://github.com/Hisoka37/Space-Travelers-Hub',
         reverse: false,
     }
     
