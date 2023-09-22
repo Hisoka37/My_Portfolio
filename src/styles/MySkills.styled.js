@@ -8,7 +8,8 @@ export const SkillsContainer = styled.div`
 `
 
 export const SkillsCards = styled.div`
-    width: 230px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #fff;
     border-radius: 1rem;
     padding: 3rem 0;

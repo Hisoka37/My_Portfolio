@@ -3,6 +3,8 @@ import { Container, MainBody } from "./styles/Global.styled"
 import { theme } from "./utils/Theme"
 import { Showcase } from "./components/Showcase"
 import { MySkills } from "./components/MySkills"
+import { MyProjects } from "./components/MyProjects"
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
       <Container>
         <Showcase />
         <MySkills />
+        <MyProjects />
       </Container>  
     </MainBody>
     </ThemeProvider> 

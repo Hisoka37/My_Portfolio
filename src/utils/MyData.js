@@ -1,40 +1,36 @@
-import { FaReact } from 'react-icons/fa'
-import { SiRubyonrails, SiRuby, SiJavascript, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import GameHub from '../assets/gamehub.jpg'
+import HouseAgs from '../assets/houseags.jpg'
+import SpaceHub from '../assets/spacehub.png'
 
-export const Stacks = [
+export const projectsDetails = [
     {
         id: 0,
-        tech: 'Ruby',
-        icon: <SiRuby />
-    },
-
-    {
-        id: 1,
-        tech: 'Ruby On Rails',
-        icon: <SiRubyonrails />
-    },
+        project_name: " GamesHub ",
+        project_desc: "GameHub is a video game discovery web app built with TypeScript, React.js, ChakraUI, that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more. using data from the Rawg API.",
+        tech_stack: ['TypeScript', 'React.js', 'Chakra UI'],
+        project_img: GameHub,
+        project_URL: 'https://game-fz03ur1w1-hisoka37.vercel.app',
+        reverse: false,
+    }, 
 
     {
         id: 2,
-        tech: 'JavaScript',
-        icon: <SiJavascript />
+        project_name: " RentalReside ",
+        project_desc: "RentalReside API is a web service that enables users to rent houses and manage reservations for those houses. It provides a secure and efficient platform for users to create accounts, log in, view available houses, make reservations, and manage their bookings.",
+        tech_stack: ['Ruby on Rails', 'React.js', 'Redux.js', 'PostgreSQL',],
+        project_img: HouseAgs,
+        project_URL: 'https://house-rent-new5.onrender.com',
+        reverse: true,
     },
 
     {
         id: 3,
-        tech: 'TypeScript',
-        icon: <SiTypescript />
-    },
-
-    {
-        id: 4,
-        tech: 'React JS',
-        icon: <FaReact />
-    },
-
-    {
-        id: 5,
-        tech: 'Tailwind CSS',
-        icon: <SiTailwindcss />
+        project_name: " Space Travelers ",
+        project_desc: " Web App to help clients all around the world to have access to reserving space flights and work on missions sponsored by SPACE-x",
+        tech_stack: ['JavaScript', 'React.js', 'Redux.js',],
+        project_img: SpaceHub,
+        project_URL: 'https://space-hub-2unx.onrender.com',
+        reverse: false,
     }
+    
 ]
