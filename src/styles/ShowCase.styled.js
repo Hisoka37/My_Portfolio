@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ShowCaseContainer = styled.div`
     position: relative;
+
 `
 export const Image = styled.img`
     width: 100%;
@@ -10,9 +11,9 @@ export const Image = styled.img`
 
 export const ShowCaseImageCard = styled.div`
     width: 100%;
-    padding-top: 0.3rem;
     position: relative;
     overflow: hidden;
+    bottom: 50px;
 `
 export const Particle = styled.img`
 

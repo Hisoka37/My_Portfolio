@@ -25,7 +25,7 @@ export const Showcase = () => {
         <PaddingContainer
             id='Home'
             right='2%'
-            top ='15%'
+            top ='12%'
             bottom='10%'
         >
             <FlexContainer align='start' fullWidthChild>
@@ -64,7 +64,7 @@ export const Showcase = () => {
                         <Particle 
                          src ={BackgroundImg}
                          alt ='Particle'
-                         top='-60px'
+                         top='-120px'
                          left = '150px'
                          rotate='0deg'
                         />
@@ -80,7 +80,7 @@ export const Showcase = () => {
                         <Particle 
                          src ={BackgroundImg}
                          alt ='Particle'
-                         bottom='1px'
+                         bottom='100px'
                          right = '15px'
                          rotate='0deg'
                         />
