@@ -4,6 +4,7 @@ import { theme } from "./utils/Theme"
 import { Showcase } from "./components/Showcase"
 import { MySkills } from "./components/MySkills"
 import { MyProjects } from "./components/MyProjects"
+import { Footer } from "./components/Footer"
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Showcase />
         <MySkills />
         <MyProjects />
+        <Footer />
       </Container>  
     </MainBody>
     </ThemeProvider> 

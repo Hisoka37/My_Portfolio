@@ -5,12 +5,10 @@ import {
     FlexContainer,
     Heading,
     ParaText,
-    BlueText,
     IconContainer,
     Button
   } from "../../styles/Global.styled.js";
   import { TechStackCard,ProjectImageContainer, ProjectImage } from "../../styles/MyProject.styled.js";
-  import GameHub from '../../assets/gamehub.jpg'
 
 
  const Project = ({ data }) => {
