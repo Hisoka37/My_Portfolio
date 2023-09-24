@@ -38,3 +38,26 @@ export const projectsDetails = [
     }
     
 ]
+
+export const NavLinks = [
+    {
+        id:0,
+        name: 'Home',
+        href: 'Home'
+    },
+    {
+        id:1,
+        name: 'About Me',
+        href: 'Skills'
+    },
+    {
+        id:0,
+        name: 'My Work',
+        href: 'Projects'
+    },
+    {
+        id:0,
+        name: 'Hire Me',
+        href: 'Contact'
+    },
+] 

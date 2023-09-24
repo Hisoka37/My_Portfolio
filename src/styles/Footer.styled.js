@@ -12,9 +12,10 @@ export const FormLabel = styled.p`
 export const FormInput = styled.input`
     width: 100%;
     background-color: ${({ theme }) => theme.colors.primary_light};
-    border: 1px solod ${({ theme }) => theme.colors.para_text_color};
+    border: 1px solid #fff;
+    border-radius: 0.8rem;
     color: ${({ theme }) => theme.colors.para_text_color};
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 15px;
 
     &::placeholder {

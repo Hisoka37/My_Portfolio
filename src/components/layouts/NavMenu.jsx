@@ -4,8 +4,9 @@ import {
     Container,
     BlueText
     } from "../../styles/Global.styled"
-import { NavbarContainer, Logo, MenuIcon, NavMenuContainer } from "../../styles/Navbar.styled"
+import { NavbarContainer, Logo, MenuIcon, NavMenuContainer, MenuItem } from "../../styles/Navbar.styled"
 import { AiOutlineClose} from 'react-icons/ai'
+import { NavLinks } from "../../utils/MyData"
 
 
 export const NavMenu = ({ setOpenMenu }) => {
@@ -18,6 +19,26 @@ export const NavMenu = ({ setOpenMenu }) => {
             </MenuIcon>
             </FlexContainer>
         </PaddingContainer>
+
+        { /* */}
+
+        <PaddingContainer top = '8%'>
+          <FlexContainer 
+            direction = 'column'
+            align='center'
+          >
+          
+          {NavLinks.map((link) => (
+              <MenuItem
+              key={link.id}
+              href={`#${link.href}`}
+              onClick={() => setOpenMenu(false)}
+              >{link.name} </MenuItem>
+          ))}
+          </FlexContainer>
+        </PaddingContainer>
+
+
     </NavMenuContainer>
   )
 }

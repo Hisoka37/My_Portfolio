@@ -15,7 +15,7 @@ import { ContactForm, FormLabel, FormInput } from '../styles/Footer.styled.js';
 export const Footer = () => {
   return (
         <PaddingContainer
-            id='contact'
+            id='Contact'
             top='5%'
             bottom = '10%'
         >
