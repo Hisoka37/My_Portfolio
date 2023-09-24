@@ -16,7 +16,7 @@ import {
 
 import { BsGithub, BsLinkedin, BsTwitter, BsMedium} from 'react-icons/bs'
 import User from '../assets/pngwing.com.png'
-import BackgroundImg from '../assets/particle.png'
+import BackgroundImg from '../assets/pmwhite.png'
 
 
 
@@ -64,15 +64,15 @@ export const Showcase = () => {
                         <Particle 
                          src ={BackgroundImg}
                          alt ='Particle'
-                         top='-40px'
-                         left = '20opx'
-                         rotate='60deg'
+                         top='-60px'
+                         left = '150px'
+                         rotate='0deg'
                         />
 
                         <Particle 
                          src ={BackgroundImg}
                          alt ='Particle'
-                         top='50px'
+                         top='60px'
                          right = '-30px'
                          rotate='0deg'
                         />
@@ -81,7 +81,7 @@ export const Showcase = () => {
                          src ={BackgroundImg}
                          alt ='Particle'
                          bottom='1px'
-                         right = '150px'
+                         right = '15px'
                          rotate='0deg'
                         />
                
