@@ -32,6 +32,8 @@ export const FlexContainer = styled.div`
         // * if we add a fullwidthchild to flex container, then child div will have a flex property of 1
         flex: ${({ fullWidthChild }) => fullWidthChild && 1};
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){}
 `
 
 export const Heading = styled(PaddingContainer)`
