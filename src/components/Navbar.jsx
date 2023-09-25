@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import {
  FlexContainer,
  PaddingContainer,
@@ -7,15 +8,24 @@ import {
  import { NavbarContainer, Logo,MenuIcon } from "../styles/Navbar.styled"
 import { GiHamburgerMenu} from "react-icons/gi"
 import {theme} from '../utils/Theme'
-import { useState } from "react"
 import { NavMenu } from "./layouts/NavMenu"
 
 
 
 export const Navbar = () => {
      const [openMenu, setOpenMenu ] = useState(false)
+     const [sticky, setSticky] = useState(false)
+
+     useEffect(() => {
+      const onScroll = () =>  {
+        window.pageYOffset > 30 ? setSticky(true) : setSticky(false)
+      }
+      window.addEventListener('scroll', onScroll)
+      return () => window.removeEventListener('scroll', onScroll)
+     }, [])
+
   return (
-    <NavbarContainer bgColor="transparent">
+    <NavbarContainer bgColor={sticky ? theme.colors.primary : 'transparent'}>
       <PaddingContainer
         top='1.2rem'
         bottom="1.2rem"

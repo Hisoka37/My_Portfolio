@@ -25,16 +25,16 @@ export const Showcase = () => {
         <PaddingContainer
             id='Home'
             right='2%'
-            top ='12%'
+            top ='16%'
             bottom='10%'
         >
             <FlexContainer align='start' fullWidthChild>
                 <div>
                     <Heading as="h4" size="h4" top ='0.9rem' >Hello!</Heading>
                     <Heading as= 'h2' size='h2' top ='0.9rem' bottom ='1rem'>
-                         I'm <BlueText> Walid Kabboussa </BlueText></Heading>
+                         I'm <BlueText> WALID KABBOUSSA</BlueText></Heading>
                     <Heading as= 'h3' size='h3'>
-                         I'm a <BlueText> Software Engineer </BlueText></Heading>    
+                         I'm a <BlueText> SOFTWARE ENGINEER </BlueText></Heading>    
                     <ParaText as='p' top ="2rem" bottom='4rem'>
                         Hello, my name Walid Kabboussa and I'm a Software Engineer with experience in creating and designing user-friendly Web Applications.
                     </ParaText>
