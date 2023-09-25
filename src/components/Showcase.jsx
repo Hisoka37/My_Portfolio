@@ -27,6 +27,9 @@ export const Showcase = () => {
             right='2%'
             top ='16%'
             bottom='10%'
+            responsiveLeft = '1rem'
+            responsiveRight ="1rem"
+            responsiveTop = '8rem'
         >
             <FlexContainer align='start' fullWidthChild>
                 <div>
@@ -39,7 +42,7 @@ export const Showcase = () => {
                         Hello, my name Walid Kabboussa and I'm a Software Engineer with experience in creating and designing user-friendly Web Applications.
                     </ParaText>
 
-                    <FlexContainer gap ='20px'>
+                    <FlexContainer gap ='20px' responsiveFlex>
                         <IconContainer color='white' size='1.5rem'>
                             <BsLinkedin />
                         </IconContainer>
@@ -56,7 +59,7 @@ export const Showcase = () => {
                 </div>
 
                 <FlexContainer justify ="flex-end">            
-                <ShowCaseContainer>
+                <ShowCaseContainer display>
                         <ShowCaseImageCard>
                             <Image src={User} alt="" />
                         </ShowCaseImageCard>

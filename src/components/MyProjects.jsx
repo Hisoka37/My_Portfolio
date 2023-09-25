@@ -19,6 +19,9 @@ export const MyProjects = () => {
             id='Projects'
             top='5%'
             bottom='5%'
+            responsiveTop = '15%'
+            responsiveLeft = '1rem'
+            responsiveRight = '1rem'
         >
             <Heading as ='h4' size='h4'>
                 My Projects

@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ShowCaseContainer = styled.div`
     position: relative;
+@media(max-width : ${({ theme }) => theme.breakpoints.mobile}){
+    display: none;
+}    
 
 `
 export const Image = styled.img`

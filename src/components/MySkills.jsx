@@ -58,8 +58,12 @@ const Stacks = [
 
 export const MySkills = () => {
   return (
-    <PaddingContainer id="Skills" top="10%" bottom="10%">
-      <FlexContainer fullwidthChild>
+    <PaddingContainer id="Skills" top="10%" bottom="10%" responsiveLeft = '1rem' responsiveRight ='1rem'>
+      <FlexContainer
+       gap = '2rem'
+       responsiveFlex
+       responsiveDirection = 'column-reverse'
+       fullwidthChild>
         <SkillsContainer>
           {Stacks.map((stack) => (
             <SkillsCards key={stack.id}>
