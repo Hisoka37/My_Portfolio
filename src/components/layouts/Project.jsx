@@ -13,10 +13,10 @@ import {
 
  const Project = ({ data }) => {
   return (
-    <FlexContainer fullWidthChild>
+    <FlexContainer fullWidthChild reponsiveFlex>
         <div>
-            <FlexContainer align = 'center' gap = '1rem'>
-            <Heading as='h3' size='h3' bottom = '1rem'>
+            <FlexContainer gap = '1rem' responsiveFlex>
+            <Heading as='h3' size='h3' bottom = '1rem' righ ='1rem'>
                 {data.project_name}
             </Heading>
 
@@ -26,7 +26,7 @@ import {
             </FlexContainer>
 
             <PaddingContainer top='1rem'>
-                <FlexContainer gap='1.5rem'>
+                <FlexContainer gap ='1rem'>
                 {data.tech_stack.map((stack) => (
                     <TechStackCard key={stack.id}> {stack}</TechStackCard>
                 ))}
