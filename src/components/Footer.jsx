@@ -5,14 +5,30 @@ import {
     ParaText,
     BlueText,
     IconContainer,
-    Button
+    FormButton
   } from "../styles/Global.styled.js";
 import { ContactForm, FormLabel, FormInput } from '../styles/Footer.styled.js';
 import { motion } from "framer-motion";
 import { fadeBottomVariant } from '../utils/Variant.js'
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 export const Footer = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_cjk0cvj', 'template_t97zq4n', form.current, 'y7HqPrqaCQ3l2RDRR')
+          .then((result) => {
+              console.log(result.text);
+              e.target.reset();
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
   return (
         <PaddingContainer
             id='Contact'
@@ -49,12 +65,15 @@ export const Footer = () => {
                     variants={fadeBottomVariant}
                     initial='hidden'
                     whileInView='visible'
+                    ref={form}
+                    onSubmit={sendEmail}
                     >
                         <PaddingContainer bottom='2rem'>
                             <FormLabel> Name: </FormLabel>
                             <FormInput 
                                 type='text'
                                 placeholder='Enter Your name'
+                                name="user_name"
                             />                          
                         </PaddingContainer>
 
@@ -63,6 +82,7 @@ export const Footer = () => {
                             <FormInput 
                                 type='text'
                                 placeholder='Enter Your Email'
+                                name="user_email"
                             />                          
                         </PaddingContainer>
 
@@ -71,6 +91,7 @@ export const Footer = () => {
                             <FormInput 
                                 as='textarea'
                                 placeholder='Enter Your Message'
+                                name="message"
                             />                          
                         </PaddingContainer>
 
@@ -79,8 +100,10 @@ export const Footer = () => {
                             variants={fadeBottomVariant}
                             initial='hidden'
                             whileInView='visible'
+                            type="submit"
+                            value="Send"
                         >
-                            <Button> Send Message </Button>
+                            <FormButton> Send Message </FormButton>
                         </FlexContainer>
                     </ContactForm>
                 </FlexContainer>
