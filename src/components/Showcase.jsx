@@ -22,6 +22,7 @@ import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variant.js'
 
 
 
+
 export const Showcase = () => {
     return (
         <PaddingContainer
@@ -50,16 +51,24 @@ export const Showcase = () => {
 
                     <FlexContainer gap ='20px' responsiveFlex>
                         <IconContainer color='white' size='1.5rem'>
-                            <BsLinkedin />
+                            <a href="https://www.linkedin.com/in/walidkb/">
+                                <BsLinkedin />
+                            </a>
                         </IconContainer>
                         <IconContainer color='white' size='1.5rem'>
-                            <BsGithub />
+                            <a href="https://github.com/Hisoka37">
+                                <BsGithub />
+                            </a>
                         </IconContainer>
                         <IconContainer color='white' size='1.5rem'>
-                            <BsTwitter />
+                            <a href="https://twitter.com/KBwalid9">
+                                <BsTwitter />
+                            </a>
                         </IconContainer>
                         <IconContainer color='white' size='1.5rem'>
-                            <BsMedium />
+                            <a href="https://medium.com/@walidkabou">
+                                <BsMedium />
+                            </a>
                         </IconContainer>
                     </FlexContainer>
                 </motion.div>

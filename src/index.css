@@ -11,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 html {
@@ -18,3 +19,17 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #131c31;
+}
+
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(#a3c5ff, #131c31 );
+  border-radius: 10px
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
