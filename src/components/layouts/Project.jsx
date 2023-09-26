@@ -1,4 +1,5 @@
 
+ import { motion } from "framer-motion";
  import { FaGithub } from "react-icons/fa";
 import {
     PaddingContainer,
@@ -9,12 +10,21 @@ import {
     Button
   } from "../../styles/Global.styled.js";
   import { TechStackCard,ProjectImageContainer, ProjectImage } from "../../styles/MyProject.styled.js";
+  import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variant.js'
 
 
  const Project = ({ data }) => {
   return (
-    <FlexContainer fullWidthChild reponsiveFlex>
-        <div>
+    <FlexContainer 
+    fullWidthChild
+     reponsiveFlex
+     direction={data.reverse ? 'row-reverse' : false}
+     >
+        <motion.div
+       variants={data.reverse ? fadeInRightVariant : fadeInLeftVariant}
+        initial='hidden'
+        whileInView='visible'
+        >
             <FlexContainer gap = '1rem' responsiveFlex>
             <Heading as='h3' size='h3' bottom = '1rem' righ ='1rem'>
                 {data.project_name}
@@ -38,10 +48,16 @@ import {
             </ParaText>
 
             <Button href={data.project_URL}>Visit Website</Button>
-        </div>
+        </motion.div>
         
      { /* projects right section.*/}
-        <ProjectImageContainer justify='flex-end'>
+        <ProjectImageContainer 
+        as={motion.div}
+        variants={data.reverse ? fadeInLeftVariant : fadeInRightVariant}
+        initial='hidden'
+        whileInView='visible'
+        justify={data.reverse ? 'flex-start': 'flex-end'}
+        >
             <ProjectImage
              src={data.project_img}
             alt={data.project_name}

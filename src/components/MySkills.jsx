@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variant.js'
 import {
   PaddingContainer,
   FlexContainer,
@@ -64,7 +66,12 @@ export const MySkills = () => {
        responsiveFlex
        responsiveDirection = 'column-reverse'
        fullwidthChild>
-        <SkillsContainer>
+        <SkillsContainer 
+          as={motion.div}
+          variants={fadeInLeftVariant}
+          initial='hidden'
+          whileInView='visible'
+          >
           {Stacks.map((stack) => (
             <SkillsCards key={stack.id}>
               <IconContainer size="5rem" color="blue" key={stack.id}>
@@ -79,7 +86,11 @@ export const MySkills = () => {
         </SkillsContainer>
         { /*-- Right Section --- */}
 
-        <div>
+        <motion.div
+          variants={fadeInRightVariant}
+          initial='hidden'
+          whileInView='visible'
+         >
 
         <Heading as='h2' size ='h2' top ='0.5rem'>
           <BlueText> About </BlueText> Me.
@@ -114,7 +125,7 @@ export const MySkills = () => {
         Let's collaborate to bring your digital projects to life with innovative and sustainable solutions.
         </ParaText>
 
-        </div>
+        </motion.div>
 
       </FlexContainer>
     </PaddingContainer>

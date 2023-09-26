@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
     PaddingContainer,
     FlexContainer,
@@ -10,6 +8,8 @@ import {
     Button
   } from "../styles/Global.styled.js";
 import { ContactForm, FormLabel, FormInput } from '../styles/Footer.styled.js';
+import { motion } from "framer-motion";
+import { fadeBottomVariant } from '../utils/Variant.js'
 
 
 export const Footer = () => {
@@ -20,25 +20,36 @@ export const Footer = () => {
             bottom = '10%'
         >
             <Heading
-                as='h4'
+                as={motion.h4}
+                variants={fadeBottomVariant}
+                initial='hidden'
+                whileInView='visible'
                 size='h4'
-                align='center'
+                align='center'   
             >
              My Contact
             </Heading>
 
             <Heading 
-                as='h2'
+                as={motion.h2}
+                variants={fadeBottomVariant}
+                initial='hidden'
+                whileInView='visible'
                 size='h2'
-                align='center'
                 top='0.5rem'
+                align='center'
             >
                 Contact <BlueText> Me Here</BlueText>
             </Heading>
 
             <PaddingContainer top='3rem'>
                 <FlexContainer justify='center'>
-                    <ContactForm>
+                    <ContactForm 
+                    as={motion.form}
+                    variants={fadeBottomVariant}
+                    initial='hidden'
+                    whileInView='visible'
+                    >
                         <PaddingContainer bottom='2rem'>
                             <FormLabel> Name: </FormLabel>
                             <FormInput 
@@ -63,7 +74,12 @@ export const Footer = () => {
                             />                          
                         </PaddingContainer>
 
-                        <FlexContainer justify='center' responsiveFlex>
+                        <FlexContainer justify='center' responsiveFlex
+                            as={motion.div}
+                            variants={fadeBottomVariant}
+                            initial='hidden'
+                            whileInView='visible'
+                        >
                             <Button> Send Message </Button>
                         </FlexContainer>
                     </ContactForm>

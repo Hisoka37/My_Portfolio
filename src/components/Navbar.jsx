@@ -9,6 +9,7 @@ import {
 import { GiHamburgerMenu} from "react-icons/gi"
 import {theme} from '../utils/Theme'
 import { NavMenu } from "./layouts/NavMenu"
+import { motion,AnimatePresence } from "framer-motion"
 
 
 
@@ -40,15 +41,18 @@ export const Navbar = () => {
                     </Logo>
             {/* -- Right Side */}
                  <MenuIcon
-                    onClick={()=> {setOpenMenu(true)}}
+                 as={motion.a}
+                 whileHover={{scale: 1.2}}
+                    onClick={()=> { setOpenMenu(true)}}
                  >
                      <GiHamburgerMenu/>
                  </MenuIcon>
 
            </FlexContainer>
         </Container>
-
+        <AnimatePresence>
         {openMenu && <NavMenu setOpenMenu = { setOpenMenu }  />}
+        </AnimatePresence>
       </PaddingContainer>
     </NavbarContainer>
   )
