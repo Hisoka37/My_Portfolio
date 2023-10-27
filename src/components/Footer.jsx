@@ -74,6 +74,7 @@ export const Footer = () => {
                                 type='text'
                                 placeholder='Enter Your name'
                                 name="user_name"
+                                required
                             />                          
                         </PaddingContainer>
 
@@ -83,6 +84,7 @@ export const Footer = () => {
                                 type='text'
                                 placeholder='Enter Your Email'
                                 name="user_email"
+                                required
                             />                          
                         </PaddingContainer>
 
@@ -92,6 +94,7 @@ export const Footer = () => {
                                 as='textarea'
                                 placeholder='Enter Your Message'
                                 name="message"
+                                required
                             />                          
                         </PaddingContainer>
 
