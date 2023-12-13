@@ -1,6 +1,6 @@
 import GameHub from '../assets/gamehub.jpg'
 import HouseAgs from '../assets/houseags.jpg'
-import SpaceHub from '../assets/spacehub.png'
+import RailsPass from '../assets/railspass.png'
 
 export const projectsDetails = [
     {
@@ -28,12 +28,12 @@ export const projectsDetails = [
 
     {
         id: 3,
-        project_name: " Space Travelers ",
-        project_desc: " Web App to help clients all around the world to have access to reserving space flights and work on missions sponsored by SPACE-x",
-        tech_stack: ['JavaScript', 'React.js', 'Redux.js',],
-        project_img: SpaceHub,
+        project_name: " RailsPass ",
+        project_desc: " RailsPass is a Ruby on Rails-based password manager that offers secure password storage, and organization for users, simplifying online account management and enhancing security.",
+        tech_stack: ['Ruby on Rails', 'JavaScript', 'PostgreSQL',],
+        project_img: RailsPass,
         project_URL: 'https://space-hub-2unx.onrender.com',
-        source_code:'https://github.com/Hisoka37/Space-Travelers-Hub',
+        source_code:'https://github.com/Hisoka37',
         reverse: false,
     }
     
