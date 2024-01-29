@@ -7,8 +7,6 @@
   - [🛠 Built With](#built-with)
   - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
 - [📝 License](#license)
 </details>
 
@@ -61,13 +59,6 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## ⭐️ Show your support <a name="support"></a>
-
-> If you like this project... please leave us a comment in our twitter/LinkedIn accounts, Thankyou
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
