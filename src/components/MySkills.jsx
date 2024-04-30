@@ -15,34 +15,35 @@ import {
   SiRuby,
   SiJavascript,
   SiTypescript,
-  SiRedux,
 } from "react-icons/si";
+
+import { TbBrandNextjs } from "react-icons/tb";
 
 import { SkillsContainer, SkillsCards } from "../styles/MySkills.styled.js";
 
 const Stacks = [
   {
     id: 0,
-    tech: "Ruby",
-    icon: <SiRuby />,
-  },
-
-  {
-    id: 1,
-    tech: "Ruby On Rails",
-    icon: <SiRubyonrails />,
-  },
-
-  {
-    id: 2,
     tech: "JavaScript",
     icon: <SiJavascript />,
   },
 
   {
-    id: 3,
+    id: 1,
     tech: "TypeScript",
     icon: <SiTypescript />,
+  },
+
+  {
+    id: 2,
+    tech: "Ruby",
+    icon: <SiRuby />,
+  },
+
+  {
+    id: 3,
+    tech: "Ruby On Rails",
+    icon: <SiRubyonrails />,
   },
 
   {
@@ -53,16 +54,17 @@ const Stacks = [
 
   {
     id: 5,
-    tech: "Redux JS",
-    icon: <SiRedux />,
+    tech: "Next JS",
+    icon: <TbBrandNextjs />,
   },
 ];
+
 
 export const MySkills = () => {
   return (
     <PaddingContainer id="Skills" top="10%" bottom="10%" responsiveLeft = '1rem' responsiveRight ='1rem'>
       <FlexContainer
-       gap = '2rem'
+       gap = '4rem'
        responsiveFlex
        responsiveDirection = 'column-reverse'
        fullwidthChild>
@@ -74,7 +76,7 @@ export const MySkills = () => {
           >
           {Stacks.map((stack) => (
             <SkillsCards key={stack.id}>
-              <IconContainer size="5rem" color="blue" key={stack.id}>
+              <IconContainer size="3rem" color="blue" key={stack.id}>
                 {stack.icon}
               </IconContainer>
 
@@ -109,16 +111,15 @@ export const MySkills = () => {
 
         <ParaText top ='2rem' bottom ='0.5rem' right='1.5rem'>
         As a Software Engineer with a strong background in Electrical Engineering,
-        I specialize in full-stack development. Proficient in JavaScript, React,
+        I specialize in full-stack development. Proficient in JavaScript, React.js,Next.js, MERN, 
         Ruby, and Ruby on Rails, I have a knack for crafting responsive,
         dynamic user interfaces.
         </ParaText>
 
         <ParaText top ='2rem'>
-        My expertise in React allows me to build scalable and maintainable applications,
-         ensuring efficiency and adaptability to evolving business needs.
-          With a unique blend of technical skills and creativity,
-           I create engaging web applications that leave a lasting impression.
+        My proficiency in frontend and backend development empowers me to construct scalable and 
+        maintainable applications that seamlessly adapt to evolving business requirements.
+         By leveraging a diverse set of technical skills and fostering creativity, I specialize in crafting engaging web applications that resonate with users long after their initial interaction. This holistic approach ensures efficiency, adaptability, and a lasting impression for each digital solution I deliver.
         </ParaText>
 
         <ParaText top ='2rem'>
