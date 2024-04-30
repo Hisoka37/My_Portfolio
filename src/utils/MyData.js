@@ -1,6 +1,7 @@
 import GameHub from '../assets/gamehub.jpg'
 import HouseAgs from '../assets/houseags.jpg'
-import SpaceHub from '../assets/spacehub.png'
+import budgetbuddy from '../assets/budgetbuddy.png'
+import DevConnect from '../assets/DevConnect.png'
 
 export const projectsDetails = [
     {
@@ -28,13 +29,24 @@ export const projectsDetails = [
 
     {
         id: 3,
-        project_name: " Space Travelers ",
-        project_desc: " Web App to help clients all around the world to have access to reserving space flights and work on missions sponsored by SPACE-x",
-        tech_stack: ['JavaScript', 'React.js', 'Redux.js',],
-        project_img: SpaceHub,
-        project_URL: 'https://space-hub-2unx.onrender.com',
-        source_code:'https://github.com/Hisoka37/Space-Travelers-Hub',
+        project_name: " BudgetBuddy ",
+        project_desc: " Crafted a full-stack MERN web application, deployed on Render, designed to empower users in managing their finances efficiently. Budget Buddy offers seamless expense tracking, personalized budget setting, and insightful data visualization, facilitating users in reaching their financial objectives effortlessly. Utilizing GraphQL alongside modern technologies and best practices, the project not only demonstrates expertise in frontend and backend development, deployment, and user experience design but also showcases proficiency in leveraging GraphQL for enhanced data querying and manipulation.",
+        tech_stack: ['JavaScript', 'React.js', 'MongoDB','Node.js','GraphQL', 'TailwindCss'],
+        project_img: budgetbuddy,
+        project_URL: 'https://budgetbuddy-s92u.onrender.com/',
+        source_code:'https://github.com/Hisoka37/BudgetBuddy-MERN-App',
         reverse: false,
+    },
+
+    {
+        id: 4,
+        project_name: " DevConnect ",
+        project_desc: " Developed a Full-Stack MERN web application deployed on Render, empowering users to authenticate via GitHub, explore GitHub user profiles, and fetch repositories using the GitHub API. Leveraging React.js for the frontend, Node.js and Express.js for the backend, and MongoDB for database management, the project showcases proficiency in building scalable and interactive applications. Additional features include real-time updates of user data, data visualization of GitHub repositories, and seamless integration with third-party APIs for enhanced functionality and user experience.",
+        tech_stack: ['JavaScript', 'React.js', 'MongoDB','Node.js', 'TailwindCss'],
+        project_img: DevConnect,
+        project_URL: 'https://github-mern-project.onrender.com',
+        source_code:'https://github.com/Hisoka37/DevConnect',
+        reverse: true,
     }
     
 ]
@@ -57,7 +69,7 @@ export const NavLinks = [
     },
     {
         id:0,
-        name: 'Hire Me',
+        name: 'Contact Me',
         href: 'Contact'
     },
 ] 

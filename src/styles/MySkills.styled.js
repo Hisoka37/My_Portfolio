@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillsContainer = styled.div`
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     padding:0 5%;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile }){
@@ -14,11 +14,11 @@ export const SkillsContainer = styled.div`
 `
 
 export const SkillsCards = styled.div`
-    width: 200px;
-    height: 150px;
+    width: 140px;
+    height: 145px;
     border: 1px solid #fff;
-    border-radius: 1rem;
-    padding: 3rem 0;
+    border-radius: 1.2rem;
+    padding: 1rem 0;
     display: flex ;
     flex-direction: column;
     align-items: center;
